@@ -26,6 +26,9 @@ const Header = ({ children }) => {
           <Link to={"/lion"}>
             <FormattedMessage id={"name_lion"} />
           </Link>
+          <Link to={"/leopard"}>
+            <FormattedMessage id={"name_leopard"} />
+          </Link>
         </nav>
         <div>{children}</div>
       </div>
