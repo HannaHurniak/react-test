@@ -15,7 +15,7 @@ const Giraffe = () => {
       <h2 data-testid="who">
         I am a Giraffe!
       </h2>
-      <img src={giraffe} />
+      <img src={giraffe} alt="giraffe" />
       <h3 data-testid="name">Giraffe</h3>
     </div>
   );

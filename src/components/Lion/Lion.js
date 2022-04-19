@@ -8,7 +8,7 @@ const Lion = () => {
   return (
     <>
         <h2><FormattedMessage id={'text_lion'} values={{  }}/></h2>
-        <img src={lion} />
+        <img src={lion} alt="lion" />
         <h3>{intl.formatMessage({id: 'name_lion'})}</h3>
     </>
   );

@@ -1,6 +1,6 @@
 import { LOCALES } from '../locales';
 
-export default {
+const se = {
     [LOCALES.SWEDISH]: {
         'text_zebra': 'Jag är Zebra!',
         'name_zebra': 'Zebra',
@@ -10,4 +10,4 @@ export default {
         'name_lion': 'Lejon',
     }
 }
-
+export default se;

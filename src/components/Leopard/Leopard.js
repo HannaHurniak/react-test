@@ -7,7 +7,7 @@ const Leopard = () => {
       <h2 data-testid="who">
         I am a Leopard!
       </h2>
-      <img src={leopard} />
+      <img src={leopard} alt="leopard" />
       <h3 data-testid="name">Leopard</h3>
     </div>
   );

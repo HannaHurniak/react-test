@@ -1,6 +1,6 @@
 import { LOCALES } from '../locales';
 
-export default {
+const ru = {
     [LOCALES.RUSSIAN]: {
         'text_zebra': 'Я Зебра!',
         'name_zebra': 'Зебра',
@@ -10,3 +10,4 @@ export default {
         'name_lion': 'Лев',
     }
 }
+export default ru;

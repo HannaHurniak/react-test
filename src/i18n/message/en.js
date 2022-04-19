@@ -1,6 +1,6 @@
 import { LOCALES } from '../locales';
 
-export default {
+const en = {
     [LOCALES.ENGLISH]: {
         'text_zebra': 'I am Zebra!',
         'name_zebra': 'Zebra',
@@ -10,3 +10,4 @@ export default {
         'name_lion': 'Lion',
     }
 }
+export default en;
