@@ -28,6 +28,10 @@ jobs:
           npm run test
           npm run predeploy
           npm run deploy
+      - name: my name
+        run: |
+          git config --global user.email "hanna.hurniak@yahoo.com"
+          git config --global user.name "Hanna Hurniak"
       - name: Deploy site to gh-pages branch
         uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
         with:
