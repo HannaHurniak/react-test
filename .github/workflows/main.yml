@@ -18,12 +18,11 @@ jobs:
 #       - name: Test
 #         run: npm run test
       - uses: actions/checkout@main
-      - name: build
+      - name: server
         run: |
           npm install -g serve
           serve -s build
-          git config --global user.email "hanna.yermakovich@leverx.com"
-          git config --global user.name "Hanna Yermakovich"
+      - name: npm
           npm install
           npm run test
           npm run deploy
