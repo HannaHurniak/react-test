@@ -8,6 +8,8 @@ const se = {
     name_giraffe: "Giraff",
     text_lion: "Jag är Lejon!",
     name_lion: "Lejon",
+    text_hippo: "Jag är Flodhäst",
+    name_hippo: "Flodhäst",
   },
 };
 export default se;

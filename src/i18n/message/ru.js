@@ -8,6 +8,8 @@ const ru = {
     name_giraffe: "Жираф",
     text_lion: "Я Лев!",
     name_lion: "Лев",
+    text_hippo: "Я Бегемот!",
+    name_hippo: "Бегемот",
   },
 };
 export default ru;
