@@ -1,4 +1,4 @@
-import hippo from './../../assets/hippo.jpeg';
+import hippo from './../../assets/hippo.jpg';
 
 const Hippo = () => {
   return (
