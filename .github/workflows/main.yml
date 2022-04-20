@@ -21,9 +21,15 @@ jobs:
           npm run test
           npm run predeploy
           npm run deploy
+      - name: Deploy with gh-pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy site to gh-pages branch
-        uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
-        with:
-          repo-token: ${{ secrets.GH_PAT }}
+#       - name: Deploy site to gh-pages branch
+#         uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
+#         with:
+#           repo-token: ${{ secrets.GH_PAT }}
 
