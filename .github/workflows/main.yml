@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@main
-      - name: my name
-        run: |
-          git config --global user.email "hanna.hurniak@yahoo.com"
-          git config --global user.name "Hanna Hurniak"
+#       - name: my name
+#         run: |
+#           git config --global user.email "hanna.hurniak@yahoo.com"
+#           git config --global user.name "Hanna Hurniak"
       - name: npm
         run: | 
           npm install
