@@ -6,24 +6,30 @@ on:
     branches: [ main ]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-#       - uses: actions/checkout@v3
-
-#       - name: install
-#         run: npm install
-        
-#       - name: Test
-#         run: npm run test
       - uses: actions/checkout@main
-      - name: build
-        run: |
+#       - name: my name
+#         run: |
+#           git config --global user.email "hanna.hurniak@yahoo.com"
+#           git config --global user.name "Hanna Hurniak"
+      - name: npm
+        run: | 
           npm install
           npm run test
-          npm run build
-      - name: Deploy site to gh-pages branch
-        uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
-        with:
-          repo-token: ${{ secrets.GH_PAT }}
+          npm run predeploy
+          npm run deploy
+      - name: Deploy with gh-pages
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+#       - name: Deploy site to gh-pages branch
+#         uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
+#         with:
+#           repo-token: ${{ secrets.GH_PAT }}
+
