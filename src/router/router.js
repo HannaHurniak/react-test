@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Zebra from './../components/Zebra/Zebra';
 import Giraffe from './../components/Giraffe/Giraffe';
