@@ -11,10 +11,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@main
-#       - name: my name
-#         run: |
-#           git config --global user.email "hanna.hurniak@yahoo.com"
-#           git config --global user.name "Hanna Hurniak"
+
       - name: npm
         run: | 
           npm install
@@ -27,8 +24,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-#       - name: Deploy site to gh-pages branch
-#         uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
-#         with:
-#           repo-token: ${{ secrets.GH_PAT }}
 
