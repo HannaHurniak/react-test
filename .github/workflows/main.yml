@@ -10,22 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-#       - uses: actions/checkout@v3
-
-#       - name: install
-#         run: npm install
-        
-#       - name: Test
-#         run: npm run test
       - uses: actions/checkout@main
       - name: my name
         run: |
           git config --global user.email "hanna.hurniak@yahoo.com"
           git config --global user.name "Hanna Hurniak"
-#       - name: server
-#         run: |
-#           npm install -g serve
-#           serve -s build
       - name: npm
         run: | 
           npm install
